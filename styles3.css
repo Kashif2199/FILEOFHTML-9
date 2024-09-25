@@ -1,0 +1,75 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.center-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hidden box that appears when button is clicked */
+.info-box {
+    display: none;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Class to hide the button */
+.hidden {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .center-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .info-box {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .center-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .info-box {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
