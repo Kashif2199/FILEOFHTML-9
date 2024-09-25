@@ -1,0 +1,50 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.content {
+    font-family: Arial, sans-serif;
+}
+
+/* Background color changes for different screen sizes */
+
+/* Default background color for large screens (desktop) */
+body {
+    background-color: #ff9999;  /* Light red */
+}
+
+/* For tablets and smaller desktops (width <= 1024px) */
+@media (max-width: 1024px) {
+    body {
+        background-color: #ffcc99;  /* Light orange */
+    }
+}
+
+/* For smaller tablets and large phones (width <= 768px) */
+@media (max-width: 768px) {
+    body {
+        background-color: #99ccff;  /* Light blue */
+    }
+}
+
+/* For mobile phones (width <= 480px) */
+@media (max-width: 480px) {
+    body {
+        background-color: #99ff99;  /* Light green */
+    }
+}
+
+/* For very small devices (width <= 320px) */
+@media (max-width: 320px) {
+    body {
+        background-color: #cc99ff;  /* Light purple */
+    }
+}
